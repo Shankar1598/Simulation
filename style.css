@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Ubuntu');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    padding: 1%;
+    background-color: #1f1f1f;
+    color: #fff;
+    font-family: 'Bad Script', cursive;
+}
+.title{
+    text-align: center;
+    padding: 1%;
+    font-size: 1.5em;
+}
+.logo{
+    background: url("logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 7vh;
+}
+.nav{
+    width:100vw;
+    padding: .1%;
+    background: #5aadbb;
+}
+.dropdown{
+    padding: .5%;
+    text-decoration: none !important;
+    height: auto;
+    display: inline-block;
+}
+#head{
+    text-align: center;
+    padding: 1%;
+    background-color: #5aadbb;
+    width: 100vw;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+}
+.container-fluid{
+    position: relative;
+    top: 2vh;
+}
+#performance{
+    padding: 2%;
+    border: solid 1px black;
+    border-radius: 4px;
+    height: 300px;
+}
+.item-group{
+    padding: 1%;
+    margin-bottom: 30px;
+}
+.slider{
+    position: relative;
+    top: 5px;
+}
+.rang-val{
+    position: relative;
+    left: 40px;
+}
+.dropdown{
+    float: right;
+
+}
+.btn,.btn:hover,.btn:active,.btn:focus{
+    background-color: #dd002a;
+    color: white;
+}
+input{
+    float: none !important;
+}
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.ui-slider-handle{
+    background-color: #dd002a;
+}
+
+.box-head{
+    position: relative;
+    top: 1.5vh;
+    padding: 1px;
+    left:.5vw;
+    background-color: white;
+    z-index: 1;
+    display: inline-block;
+}
+
+#image{
+    background-image: url("motor-images-8.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vh;
+}
