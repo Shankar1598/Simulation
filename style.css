@@ -24,6 +24,7 @@
     width:100vw;
     padding: .1%;
     background: #5aadbb;
+    clear: both;
 }
 .dropdown{
     padding: .5%;
@@ -48,24 +49,20 @@
     padding: 2%;
     border: solid 1px black;
     border-radius: 4px;
-    height: 300px;
 }
 .item-group{
     padding: 1%;
-    margin-bottom: 30px;
+    margin-bottom: 3vmin;
 }
 .slider{
     position: relative;
-    top: 5px;
+    top: 0.7vmin;
 }
 .rang-val{
     position: relative;
     left: 4%;
 }
-.dropdown{
-    float: right;
 
-}
 .btn,.btn:hover,.btn:active,.btn:focus{
     background-color: #dd002a;
     color: white;
@@ -96,9 +93,35 @@ input::-webkit-inner-spin-button {
 }
 
 #image{
-    background-image: url("motor-images-8.jpg");
-    background-size: contain;
+    
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
-    height: 30vh;
+    height: 26.5vh;
+    width: 40vw;
+}
+
+.range-label {
+    font-size-adjust: auto;
+    font-size: 1.5vmin;
+}
+
+.unfloat {
+    clear: both;
+}
+
+
+
+#graph {
+    background: url('graph.jpg') no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 27vh;
+    width: 40vw;
+}
+
+#run {
+    float: right;
+    margin-right: 30px;
+    margin-top: .5%;
 }
