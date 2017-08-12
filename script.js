@@ -143,3 +143,7 @@ function setImage(a) {
 function disable() {
     $('#runbtn').attr('disabled', '');
 }
+
+function login(){
+    window.location="simulation.html";
+}

@@ -8,13 +8,15 @@
     padding: .5%;
     background-color: #1f1f1f;
     color: #fff;
-    font-family: 'Bad Script', cursive;
+    font-family: Ubuntu;
+    display: flex;
+    align-items: center;
 }
 
 .title {
     text-align: center;
     padding: .5%;
-    font-size: 1.8em;
+    font-size: 1.6rem;
 }
 
 .logo {
@@ -27,16 +29,17 @@
 
 .nav {
     width: 100vw;
-    padding: .1%;
-    background: #5aadbb;
+    padding: 0;
+    background: #1f1f1f;
     clear: both;
 }
 
 .dropdown {
-    padding: .5%;
+    padding:0;
     text-decoration: none !important;
     height: auto;
     display: inline-block;
+    border: 1px solid white;
 }
 
 #head {
@@ -56,7 +59,7 @@
 
 #performance {
     padding: 2%;
-    border: solid 1px black;
+    border: solid 1px #1f1f1f;
     border-radius: 4px;
 }
 
@@ -87,7 +90,7 @@
 .btn:hover,
 .btn:active,
 .btn:focus {
-    background-color: #dd002a;
+    background-color: #1f1f1f;
     color: white;
 }
 
@@ -123,7 +126,7 @@ input::-webkit-inner-spin-button {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 40vh;
+    height: 38vh;
     width: 50vw;
 }
 
@@ -144,8 +147,10 @@ input::-webkit-inner-spin-button {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 20vh;
-    width: 50vw;
+    height: 35vh;
+    width: 55vw;
+    position: relative;
+    top: -5vh;
 }
 
 #run {
@@ -211,4 +216,17 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.dropdown-toggle {
+    padding: .5vh;
+    margin: 0;
+}
+
+.sel {
+    
+}
+
+body {
+    overflow: visible;
 }
