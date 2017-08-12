@@ -1,127 +1,163 @@
 @import url('https://fonts.googleapis.com/css?family=Bad+Script|Ubuntu');
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
-.header{
-    padding: 1%;
+
+.header {
+    padding: .5%;
     background-color: #1f1f1f;
     color: #fff;
     font-family: 'Bad Script', cursive;
 }
-.title{
+
+.title {
     text-align: center;
-    padding: 1%;
-    font-size: 1.5em;
+    padding: .5%;
+    font-size: 1.8em;
 }
-.logo{
+
+.logo {
     background: url("logo.png");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 7vh;
+    background-position: center;
+    height: 6vh;
 }
-.nav{
-    width:100vw;
+
+.nav {
+    width: 100vw;
     padding: .1%;
     background: #5aadbb;
     clear: both;
 }
-.dropdown{
+
+.dropdown {
     padding: .5%;
     text-decoration: none !important;
     height: auto;
     display: inline-block;
 }
-#head{
+
+#head {
     text-align: center;
-    padding: 1%;
+    padding: .5%;
     background-color: #5aadbb;
     width: 100vw;
     color: #fff;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.2em;
 }
-.container-fluid{
+
+.container-fluid {
     position: relative;
     top: 2vh;
 }
-#performance{
+
+#performance {
     padding: 2%;
     border: solid 1px black;
     border-radius: 4px;
 }
-.item-group{
+
+.item-group {
     padding: 1%;
     margin-bottom: 3vmin;
 }
-.slider{
+
+.slider {
     position: relative;
     top: 0.7vmin;
 }
-.rang-val{
+
+.rang-val {
     position: relative;
     left: 4%;
+    border: none;
+    height: 2.5vh;
+    text-align: center;
 }
 
-.btn,.btn:hover,.btn:active,.btn:focus{
+.rang-val:active,
+.rang-val:focus {
+    border: none !important;
+}
+
+.btn,
+.btn:hover,
+.btn:active,
+.btn:focus {
     background-color: #dd002a;
     color: white;
 }
-input{
+
+input {
     float: none !important;
 }
+
 input[type='number'] {
-    -moz-appearance:textfield;
+    -moz-appearance: textfield;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-.ui-slider-handle{
+
+.ui-slider-handle {
     background-color: #dd002a;
 }
 
-.box-head{
+.box-head {
     position: relative;
     top: 1.5vh;
     padding: 1px;
-    left:.5vw;
+    left: .5vw;
     background-color: white;
     z-index: 1;
     display: inline-block;
 }
 
-#image{
-    
+#image {
+    background-image: url('IM.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 26.5vh;
-    width: 40vw;
+    height: 40vh;
+    width: 50vw;
 }
 
 .range-label {
     font-size-adjust: auto;
-    font-size: 1.5vmin;
+    font-size: 1.8vmin;
+    height: 2vh;
+    text-align: center;
+    padding: 0;
 }
 
 .unfloat {
     clear: both;
 }
 
-
-
 #graph {
-    background: url('graph.jpg') no-repeat;
+    background-image: url('Speed.bmp');
+    background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 27vh;
-    width: 40vw;
+    height: 20vh;
+    width: 50vw;
 }
 
 #run {
-    float: right;
-    margin-right: 30px;
-    margin-top: .5%;
+    padding-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.sub-grp {
+    height: 2.5vh;
+}
+
+#runbtn {}
