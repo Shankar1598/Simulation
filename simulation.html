@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distributed Dynamics Simulation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">File
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">View
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Simulation
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Parameter
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Help
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="header col-xs-12">
+        <div id="logo" class="logo col-xs-2">
+            &nbsp;
+        </div>
+        <div class="title col-xs-8">
+            Department of EEE
+        </div>
+    </div>
+    <div id="head" class="col-xs-12">
+        Web Based Induction Motor Dynamic Stimulator
+    </div>
+
+    <div class="container-fluid">
+
+        <div id="left" class="col-xs-7">
+            <div id="image" class="col-xs-12">
+                <!--Image set by css-->
+                &nbsp;
+            </div>
+            <div class="form-group">
+                <label for="sel1">Select a Value:</label>
+                <select class="form-control" id="sel1">
+                    <option value="0">Speed Char</option>
+                    <option value="1">Torque Char</option>
+                    <option value="2">Flux Char</option>
+                    <option value="3">&phi;d, &phi;q Char</option>
+                    <option value="4">Rohr Current Char</option>
+                    <option value="5">Stah Current Char</option>
+                </select>
+            </div>
+            <div id="graph">
+
+            </div>
+            <div class="unfloat"></div>
+        </div>
+
+
+
+        <div id="right" class="col-xs-5">
+            <div class="box-head">
+                Motor Parameter
+            </div>
+            <div class="range-box form" id="performance">
+                <div class="item-group">
+                    <label for="slider1" class="range-label col-xs-2">Poles</label>
+                    <div class="sub-grp col-xs-10">
+                        <div id="slider1" class="slider col-xs-8"></div>
+                        <input type="number" id="slider1-val" class="rang-val col-xs-4">
+                    </div>
+                </div>
+                <div class="item-group">
+                    <label for="slider2" class="range-label col-xs-2">Vs</label>
+                    <div class="sub-grp col-xs-10">
+                        <div id="slider2" class="slider col-xs-8"></div>
+                        <input type="number" id="slider2-val" class="rang-val col-xs-4">
+                    </div>
+                </div>
+                <div class="item-group">
+                    <label for="slider3" class="range-label col-xs-2">Nr</label>
+                    <div class="sub-grp col-xs-10">
+                        <div id="slider3" class="slider col-xs-8"></div>
+                        <input type="number" id="slider3-val" class="rang-val col-xs-4">
+                    </div>
+                </div>
+                <div class="item-group">
+                    <label for="slider4" class="range-label col-xs-2">Rs</label>
+                    <div class="sub-grp col-xs-10">
+                        <div id="slider4" class="slider col-xs-8"></div>
+                        <input type="number" id="slider4-val" class="rang-val col-xs-4">
+                    </div>
+                </div>
+                <div class="item-group">
+                    <label for="slider5" class="range-label col-xs-2">Xes</label>
+                    <div class="sub-grp col-xs-10">
+                        <div id="slider5" class="slider col-xs-8"></div>
+                        <input type="number" id="slider5-val" class="rang-val col-xs-4">
+                    </div>
+                </div>
+                <div class="item-group">
+                    <label for="slider6" class="range-label col-xs-2">Xer</label>
+                    <div class="sub-grp col-xs-10">
+                        <div id="slider6" class="slider col-xs-8"></div>
+                        <input type="number" id="slider6-val" class="rang-val col-xs-4">
+                    </div>
+                </div>
+                <div class="item-group">
+                    <label for="slider7" class="range-label col-xs-2">Xem</label>
+                    <div class="sub-grp col-xs-10">
+                        <div id="slider7" class="slider col-xs-8"></div>
+                        <input type="number" id="slider7-val" class="rang-val col-xs-4">
+                    </div>
+                </div>
+                <div class="item-group">
+                    <label for="slider8" class="range-label col-xs-2">Jm</label>
+                    <div class="sub-grp col-xs-10">
+                        <div id="slider8" class="slider col-xs-8"></div>
+                        <input type="number" id="slider8-val" class="rang-val col-xs-4">
+                    </div>
+                </div>
+                <div class="item-group">
+                    <label for="slider9" class="range-label col-xs-2">Cj</label>
+                    <div class="sub-grp col-xs-10">
+                        <div id="slider9" class="slider col-xs-8"></div>
+                        <input type="number" id="slider9-val" class="rang-val col-xs-4">
+                    </div>
+                </div>
+                <div class="unfloat"></div>
+            </div>
+
+
+            <div class="range-box" id="mechanical">
+
+            </div>
+
+
+            <div class="range-box" id="stimulation">
+
+            </div>
+            <div class="form-group">
+                <label for="sel2">Select a Value:</label>
+                <select class="form-control" id="sel2">
+                    <option value="0">Vector Control</option>
+                    <option value="1">Clasical Direct</option>
+                    <option value="2">Fuzzy Logic</option>
+                </select>
+                <div id="run" class="col-xs-12">
+                    <button class="btn" id="runbtn" type="button" onclick="disable()">Run Simulation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
